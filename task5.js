@@ -28,6 +28,7 @@ const shoppingBag = [
 
 let totalSum = 0;
 
+//function
 function getTotalPriceOfShoppingBag(shoppingBag){
     for(let i = 0; i < shoppingBag.length; i++){       
         for(let name in groceries){
