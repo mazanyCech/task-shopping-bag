@@ -1,3 +1,10 @@
+//Description the task
+// There are two players in the game: the hero and the enemy. They will fight each other. Each player
+// has a health bar, which initially equals 100. With each hit the opposing player's
+// the opposing player has 10 health units taken away. The winner is the one with
+// health is greater than 0.
+
+
 const heroPlayer ={
     name: "Timbersaw",
     health: 100,
@@ -5,7 +12,6 @@ const heroPlayer ={
         console.log(enemyPlayer.health = enemyPlayer.health - 10);
     }
 };
-
 
 const enemyPlayer ={
     name: "Bane",
@@ -15,8 +21,6 @@ const enemyPlayer ={
     }
 }
 
-
-
 //Function start game where the players will fight each other 
 //if ti`ll be 0 then calls method "heatEnemy", if it`ll be 1 then calls method "heatHero"
 function startGame(heroPlayer, enemyPlayer, getRandomNumberInRange){
@@ -24,8 +28,7 @@ function startGame(heroPlayer, enemyPlayer, getRandomNumberInRange){
     while (enemyPlayer.health >= 0 && heroPlayer.health >= 0){      
         let random = getRandomNumberInRange(0, 1);
         if(random === 0){
-            heroPlayer.heatEnemy(enemyPlayer);           
-            
+            heroPlayer.heatEnemy(enemyPlayer);                      
         } else if(random === 1){
             enemyPlayer.heatHero(heroPlayer);
                     
@@ -46,6 +49,5 @@ function getRandomNumberInRange(min, max){
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-//let result = getRandomNumberInRange(0, 1);
-
 startGame(heroPlayer, enemyPlayer, getRandomNumberInRange);
+
