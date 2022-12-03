@@ -1,3 +1,9 @@
+//Description
+// Imagine that a police station is under investigation. There have been
+// several crimes have been committed. The police have other higher priority tasks,
+// so they've asked you to write a program that will calculate the perpetrator from
+// already known data.
+
 const suspectInfo = {
     "James": ["Jacob", "Bill", "Lucas"],
     "Johny": ["David", "Kyle", "Lucas"],
